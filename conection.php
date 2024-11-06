@@ -8,7 +8,7 @@ function loadEnv($filePath) {
     $lines = file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach ($lines as $line) {
         if (strpos(trim($line), '#') === 0) {
-            continue; // Ignora comentários
+            continue;
         }
         
         list($name, $value) = explode('=', $line, 2);
@@ -21,7 +21,6 @@ function loadEnv($filePath) {
     }
 }
 
-// Carrega as variáveis do .env
 loadEnv(__DIR__ . '/.env');
 
 define('HOST', $_ENV['HOST']);

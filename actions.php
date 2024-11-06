@@ -21,7 +21,6 @@ if(isset($_POST['create_potion'])){
         $file_name = basename($_FILES['imagem']['name']);
         $target_file = $upload_dir . $file_name;
 
-        // Verifica se a pasta de upload existe; se não, cria
         if (!is_dir($upload_dir)) {
             mkdir($upload_dir, 0777, true);
         }
@@ -68,7 +67,6 @@ if(isset($_POST['update_potion'])){
         $file_name = basename($_FILES['imagem']['name']);
         $target_file = $upload_dir . $file_name;
 
-        // Verifica se a pasta de upload existe; se não, cria
         if (!is_dir($upload_dir)) {
             mkdir($upload_dir, 0777, true);
         }
@@ -85,7 +83,6 @@ if(isset($_POST['update_potion'])){
             exit;
         }
     } else {
-        // Se não houver nova imagem, atualize os outros campos sem alterar o caminho da imagem
         $sql = "UPDATE potions 
                 SET name='$nome', effect='$efeito', ingredients='$ingredientes', price='$preco' 
                 WHERE id='$potion_id'";
