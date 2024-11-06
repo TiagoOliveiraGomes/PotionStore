@@ -29,6 +29,10 @@ Para iniciá-lo, siga os passos abaixo:
 <h4>1) Substituir as variaveis ambiente (HOST, USER, PASSWORD, DB) pelas credenciais do seu DB local</h4>
 
 # <h3>Iniciar o projeto</h3>
+<h4>1) Abra o terminal</h4>
+<h4>1) Localize o arquivo "index.php"</h4>
+<hr>
+<h4>1) Execute o comando:</h4>
 ```javascript
 $ php -S localhost:8000
 ```
