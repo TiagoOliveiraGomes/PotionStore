@@ -33,6 +33,7 @@ Para iniciá-lo, siga os passos abaixo:
 <h4>1) Localize o arquivo "index.php"</h4>
 <hr>
 <h4>1) Execute o comando:</h4>
+
 ```javascript
 $ php -S localhost:8000
 ```
